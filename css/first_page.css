@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* 头部导航 ***********************************/
+header{
+    width: 100%;
+}
+.headwrap{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.logo{
+    height: 60px;
+    width: 20%;
+    float: left;
+    background: url(https://oss.static.nubia.cn/active/5dae6dd070bfa59.png) no-repeat center;
+    float: left;
+    background-size: 65%;
+}
+
+.head_li1{
+    height: 100%;
+    width: 60%;
+    float: left;
+}
+
+.head_u1 li{
+    float: left;
+    /* width: 12.5%; */
+    height: 100%;
+}
+.head_u1 li a{
+    font-weight: 500;
+    color: #000;
+    line-height: 60px;
+    text-align: center;
+    padding: 27.8px;
+    font-size: 14px;
+}
+.head_li2{
+    height: 60px;
+    width: 20%;
+    float: left;
+}
+.head_li2 li{
+    float: left;
+}
+.head_u2{
+    width: 200px;
+    height: 60px;
+    position: relative;
+}
+.head_u2li_a{
+    width: 33px;
+    height: 30px;
+    margin-left: 60px;
+    margin-top: 15px;
+    background: url(../images/sprites_header_footer.png) -134px 184px;
+    
+}
+.head_u2li_b{
+    width: 33px;
+    height: 30px;
+    margin-top: 15px;
+    background: url(../images/sprites_header_footer.png) -166px 217px;
+}
+.head_u2li_c{
+    width: 33px;
+    height: 30px;
+    margin-top: 15px;
+    background: url(../images/sprites_header_footer.png) -134px 249px;
+}
+
+.head_lia:hover .head_s1{
+    display: block;
+}
+.head_lib:hover .head_s2{
+    display: block;
+}
+.head_lic:hover .head_s3{
+    display: block;
+}
+/* 导航下方列表页 */
+.head_select{
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+.head_select_ul1{
+    width: 100%;
+    height: 150px;
+}
+.head_select li{
+    width: 15%;
+    height: 150px;
+}
+.head_select_li1,.head_select_li2,.head_select_li3{
+    margin-left: 250px;
+}
+.head_select_ul1 img{
+    width: 50px;
+    height: 65px;
+    margin-top: 30px;
+}
+.head_select_ul1 p{
+    font-size: 12px;
+    margin-top: 15px;
+}
+/* 个人中心列表页 */
+.gerenzhongxin{
+    width: 360px;
+    height: auto;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    z-index: 1999;
+    display: none;
+}
+.gerenzhongxin li{
+    border-bottom: 1px solid #bbb;
+    height: 60px;
+    width: 320px;
+    margin: 0 auto;
+    line-height: 60px;
+}
+.gerenzhongxin span{
+    float: right;
+}
+.head_u2:hover .gerenzhongxin{
+    display: block;
+}
+/* 图片区 ****************************/
+.allimg{
+    width: 100%;
+    max-width: 2560px;
+    margin: 0 auto;
+}
+/* 第一张，轮播图 ****************************/
+.bannerwrap{
+    width: 100%;
+    height: 505px;
+}
+.banner{
+    height: 490px;
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid #000;
+    position: relative;
+}
+.banner_img{
+    width: 100%;
+    height: 100%;
+}
+.banner_img1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner_img2{
+    position: absolute;
+    top: 0;
+    left: 2560px;
+    display: none;
+}
+.banner_img3{
+    position: absolute;
+    top: 0;
+    left: 2560px;
+    display: none;
+}
+.xiaofangkuai{
+    width: 170px;
+    height: 2px;
+    position: absolute;
+    bottom: 36px;
+    left: 603px;
+    z-index: 999;
+}
+.xiaofangkuai li{
+    width: 40px;
+    height: 2px;
+    margin-left: 2px;
+    background-color: #555;
+    float: left;
+}
+.xiaofangkuai .xfk1{
+    margin-left: 0;
+}
+.rightJ{
+    width: 50px;
+    height: 50px;
+    border: 3px #fff solid;
+    border-radius: 50%; 
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 1200px; 
+    font-size: 50px;
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+.leftJ{
+    width: 50px;
+    height: 50px;
+    border: 3px #fff solid;
+    border-radius: 50%; 
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 80px; 
+    font-size: 50px;
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+    line-height: 43px;
+}
+.banner a{
+    color: #fff;
+}
+/* 第二张，大图 ****************************/
+.scendbannerwrap{
+    width: 100%;
+    height: 505px;
+}
+.scendbanner_img{
+    width: 100%;
+    height: 490px;
+    margin: 0 auto;
+}
+/* 第三张，列表图 ******************************/
+.thirdbanner{
+    width: 100%;
+    height: 900px;
+}
+.thirdbannerul{
+    width: 100%;
+    height: 900px;
+}
+.thirdbannerul li{
+    width: 50%;
+    height: 450px; 
+    float: left;
+    overflow: hidden;
+}
+.thirdbannerul img{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+.thirdbannerli1 img{
+    padding-top: 0;
+    padding-left: 0;
+}
+.thirdbannerli2 img{
+    padding-top: 0;
+}
+.thirdbannerli3 img{
+    padding-bottom: 0;
+    padding-left: 0;
+}
+.thirdbannerli4 img{
+    padding-bottom: 0;
+}
+/* 第四张，列表图加信息 ********************/
+.fourthbanner{
+    width: 100%;
+    height: 490px;
+    overflow: hidden;
+    /* background-color: #eee; */
+}
+.fourthbannerdiv{
+    width: 100%;
+    height: 480px;
+    margin-top: 20px;
+    background-color: #eee;
+}
+.fourthbannerul{
+    width: 1168px;
+    height: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fourthbannerul li{
+    float: left;
+    height: 100%;
+    width: 356px;
+    /* padding-top: 40px; */
+    
+}
+.fourthbannerul img{
+    width: 356px;
+}
+.fourthbannerul p{
+    line-height: 48px;
+    font-size: 18px;
+}
+
+/* 底部 ******************************/
+footer{
+    width: 100%;
+    height: 693px;
+    background-color: yellow;
+}
+.service{
+    width: 1200px;
+    height: 194px;
+    background-color: seagreen;
+    margin: 0 auto;
+}
+.contact{
+    width: 1200px;
+    height: 325px;
+    background-color: royalblue;
+    margin: 0 auto;
+}
+.foot{
+    width: 1200px;
+    height: 174px;
+    background-color: salmon;
+    margin: 0 auto;
+}
+/* 分割线 *********************/
+.fengge1{
+    height: 1px;
+    width: 800px;
+    background-color: #aaa;
+    margin: 0 auto;
+}
+.fengge2{
+    height: 1px;
+    width: 800px;
+    background-color: #aaa;
+    margin: 0 auto;
+}
+
